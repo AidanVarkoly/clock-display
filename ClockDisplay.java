@@ -92,6 +92,10 @@ public class ClockDisplay
         {
          suffix = "AM";   
         } 
+        if (hour >= 13 && hour <= 24)
+        {
+         hour= hour - 12;   
+        }
         if (hour == 0)
         {
          hour = 12;   
